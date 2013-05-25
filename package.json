@@ -1,0 +1,7 @@
+{
+  "name": "automon-weather",
+  "version": "0.0.1",
+  "dependencies": {
+    "superagent": "~0.14.6"
+  }
+}
