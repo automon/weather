@@ -8,13 +8,13 @@ var request = require('superagent');
  * Make the request
  */
 
-module.exports = function(json, done) {
+module.exports = function(city, done) {
   request
-    .get('http://api.openweathermap.org/data/2.5/weather?q=San+Francisco')
+    .get('http://api.openweathermap.org/data/2.5/weather?q=' + city)
     .end(function(err, res) {
-      if(err) throw err;
+      if(err) return done(err);
       var body = JSON.parse(res.text);
-      console.log(toF(body.main.temp) + '˚');
+      done(null, toF(body.main.temp));
     });
 }
 
