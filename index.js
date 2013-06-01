@@ -3,7 +3,7 @@
  */
 
 var request = require('superagent');
-var debug = require('automon:weather');
+var debug = require('debug')('automon:weather');
 
 /**
  * Make the request

@@ -2,6 +2,7 @@
   "name": "automon-weather",
   "version": "0.0.1",
   "dependencies": {
-    "superagent": "~0.14.6"
+    "superagent": "~0.14.6",
+    "debug": "~0.7.2"
   }
 }
